@@ -24,6 +24,16 @@ body {
   background: #333;
 }
 
+.background {
+  position: fixed;
+  inset: 0;
+
+  background-image: url('../assets/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .card {
   width: 500px;
   height: auto;
@@ -37,4 +47,13 @@ body {
 
   border: 1px solid var(--border);
   border-radius: 12px;
+
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+#humidity, #speed-wind, #temperature {
+  font-weight: 500;
+  font-family: 'Bebas Neue', sans-serif;
 }
